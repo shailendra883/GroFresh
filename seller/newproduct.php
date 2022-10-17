@@ -54,12 +54,12 @@ session_start();
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="sellerhome.php" class="nav-item nav-link">Home</a>
                     <a href="addproduct.php" class="nav-item nav-link active" style="color:green;">Products</a>
-                    <a href="product.html" class="nav-item nav-link">My Profile</a>
+                    
                     
                         
                         
                     </div>
-                    <a href="contact.html" class="nav-item nav-link" style="color:black;">Messages</a>
+                    
                 </div>
                 <?php
                               if(isset($_SESSION['log']))

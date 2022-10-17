@@ -114,25 +114,25 @@ if(isset($_GET["action"]))
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
-                            <li><a href="index.php" class="active">Home</a></li>
+                            <li><a href="index.php">Home</a></li>
                                      
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                               
                                 <div class="dropdown-menu">
-                                <a class="dropdown-item" href="grocery.php">Groceries</a>
+                                <a class="dropdown-item" href="grocery.php" class="active">Groceries</a>
                                 
                                     
                                     <a class="dropdown-item" href="vegetables.php">Fruits and Vegetables</a>
                                     <a class="dropdown-item" href="dairy.php">Dairy Products</a>
                                     
                                 </div>
-                            <li><a href="">Checkout</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
                             
                             
                             
                     
-                            <li><a href="">About Us</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                         
                             <li><a href="contact.php">Contact</a></li> 
                             <?php
@@ -245,7 +245,23 @@ if(isset($_GET["action"]))
 
 						<input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
 
-						<input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+
+                        <?php
+                            if(isset($_SESSION["clog"]))
+                            {
+                                $logornot=$_SESSION["clog"];
+                                 if($logornot=="yes")
+                                 {
+                                    echo "<input type='submit' name='add_to_cart' style='margin-top:5px;' class='btn btn-success' value='Add to Cart' />";
+                                 }
+                                }
+                                else
+                                {
+                                    echo "<a href='loginform.php'><input type='button' style='margin-top:5px;' class='btn btn-success' value='Add to Cart' /></a> ";
+                                }
+                       ?>
+
+						
 
 					</div>
           
@@ -320,17 +336,45 @@ if(isset($_GET["action"]))
 	</body>
 </html>
     
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                    </p>
+    <!-- Footer Start -->
+   <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">GRO<span class="text-secondary">-</span>FRESH</h1>
+                    <p>Vendors Near You!!</p>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                   
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a><br>
+                    <a class="btn btn-link" href="">Contact Us</a><br>
+                    <a class="btn btn-link" href="">Our Services</a><br>
+                    <a class="btn btn-link" href="">Terms & Condition</a><br>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Gro-Fresh@2022</a>, All Right Reserved.
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>

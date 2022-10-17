@@ -21,7 +21,7 @@
 
        $r=mysqli_query($con,"insert into seller(sfname,slname,susername,semail,sphone,sshopname,sshopcategory,sstreet,scity,sstate,scountry,spincode,spassword) values('$fn','$ln','$un','$email','$phone','$shop','$shopno','$street','$city','$state','$country','$pin','$pass') ");
        if($r)
-       header("location:sellerlogin.php");
+       header("location:sellerlogin.php?register=true");
    
     
 

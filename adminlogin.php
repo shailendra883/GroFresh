@@ -22,6 +22,13 @@
     
   </head>
   <body>
+    
+<?php
+  if( isset( $_GET['invalid_login']) AND $_GET['invalid_login'] == 'true' ) {
+     echo "<script>alert('Invalid login details');</script>";
+
+}
+  ?>
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >
@@ -33,8 +40,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" style="color:black;">Home</a></li>
-                            <li><a href="" style="color:black;">Products</a></li>
-                            <li><a href="" style="color:black;">Checkout</a></li>
+                            
                             
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red;">Login</a>
@@ -44,10 +50,10 @@
                                     <a class="dropdown-item" href="sellerlogin.php" style="color:black;">Seller Login</a>
                                     
                                 </div>
-                              <li><a href="" style="color:black">About Us</a></li>
+                              <li><a href="aboutus.php" style="color:black">About Us</a></li>
 
                             
-                            <li><a href="" style="color:black;">Contact</a></li> 
+                            <li><a href="contact.php" style="color:black;">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>

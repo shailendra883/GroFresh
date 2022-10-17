@@ -89,7 +89,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link"  href="viewseller.php">
-                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
+                    <i class="fas fa-fw fa-chart-area" ></i>
                     <span>View Seller</span></a>
             </li>
             <li class="nav-item">
@@ -104,7 +104,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="viewmessage.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
                     <span>View Messages</span></a>
             </li>
 
@@ -150,8 +150,8 @@
                         <a class="collapse-item" href="#">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="#">404 Page</a>
-                        <a class="collapse-item" href="#">Blank Page</a>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
             </li>
@@ -173,10 +173,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+           <br><br>
 
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
@@ -406,12 +403,12 @@
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         
                     </div>
-                    <div class="page-hero bg-image overlay-dark" style="background-image: url(assets/images/addseller.jpg); background-repeat:no-repeat;background-size:cover;height:20%">
+                    <div class="page-hero bg-image overlay-dark" style="background-image: url(assets/images/Contact.jpg); background-repeat:no-repeat;background-size:cover;height:100%">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
           <br>
-        <span class="subhead" style='color:aliceblue'>Let's make it easy</span><br>
-        <span class="display-4" style="height:1em;color:aliceblue">View Seller</span>
+       
+        <span class="display-4" style="height:1em;color:black">View Messages</span>
         <br>
         <br>
         <a href="#" class="btn "></a>

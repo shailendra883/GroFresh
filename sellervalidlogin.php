@@ -19,7 +19,7 @@
             }
             else
             {
-              header("location:sellerlogin.php");
+              header("location:sellerlogin.php?invalid_login=true");
 
             }
         }

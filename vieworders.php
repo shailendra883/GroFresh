@@ -95,12 +95,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link"  href="viewcustomer.php">
-                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
+                    <i class="fas fa-fw fa-chart-area" ></i>
                     <span>View Customers</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="vieworders.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-chart-area" style="color:white;"></i>
                     <span>View Orders</span></a>
             </li>
             <li class="nav-item">
@@ -150,8 +150,8 @@
                         <a class="collapse-item" href="#">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="#">404 Page</a>
-                        <a class="collapse-item" href="#">Blank Page</a>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
             </li>
@@ -173,10 +173,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+        <br><br>
 
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
@@ -405,7 +402,7 @@
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         
                     </div>
-                    <div class="page-hero bg-image overlay-dark" style="background-image: url(assets/images/customer1.jpg); background-repeat:no-repeat;background-size:cover;height:20%">
+                    <div class="page-hero bg-image overlay-dark" style="background-image: url(assets/images/bag.jpg); background-repeat:no-repeat;background-size:cover;height:20%">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
           <br>

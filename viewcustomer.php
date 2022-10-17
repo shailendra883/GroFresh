@@ -150,8 +150,8 @@
                         <a class="collapse-item" href="#">Forgot Password</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="#">404 Page</a>
-                        <a class="collapse-item" href="#">Blank Page</a>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
             </li>
@@ -173,10 +173,7 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+         <br><br>
 
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
@@ -417,7 +414,7 @@
       </div>
     </div>
   </div>
-  <div style='float:right; width:80%'>
+  <div style=' width:80%; margin-left:200px'>
 	<br>
 	<table border="1" id="example" class="display" style='width:50em;margin-left:-1.875em !important' >
          <thead>

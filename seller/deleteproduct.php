@@ -62,8 +62,7 @@
     <div class="container-fluid  px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i></small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i></small>
+                
             </div>
             
         </div>
@@ -77,17 +76,14 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="sellerhome.php" class="nav-item nav-link active">Home</a>
                     <a href="addproduct.php" class="nav-item nav-link">Products</a>
-                    <a href="product.html" class="nav-item nav-link">My Profile</a>
                     
-                       
-                        <a href="contact.html" class="nav-item nav-link">Messages</a>
                         <?php
                               if(isset($_SESSION['log']))
                               {
                                   $logornot=$_SESSION["log"];
                                    if($logornot=="yes")
                                    {
-                                       echo "<a class='btn btn-outline-primary rounded-pill py-sm-4 px-sm-3' href='../index.php'>Logout</a>";
+                                       echo "<a class='btn btn-outline-primary rounded-pill py-sm-4 px-sm-3' href='logoutseller.php'>Logout</a>";
                                    }
                                 } 
                               
@@ -128,7 +124,7 @@
 	 $sno=1;
      $username=$_SESSION["sellerusername"];
 	     $con=mysqli_connect("localhost","root","","vendorsnearyou");
-         $s=mysqli_query($con,"select p_id, p_name,p_desc,price from products p, seller s where s.sshopcategory=p.pcategory and s.susername='$username'");
+         $s=mysqli_query($con,"select p_id, p_name,p_desc,price from products p, seller s where s.sshopcategory=p.pcategory and s.susername='$username' and p.sname='$username'");
 	  
 	     
 	              while($row=mysqli_fetch_array($s))

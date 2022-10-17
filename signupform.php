@@ -67,13 +67,13 @@
                 <div class="col-md-6">
                   <div class="form-group first">
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname" class="form-control" placeholder="e.g. John" id="fname">
+                    <input type="text" name="fname" class="form-control" placeholder="e.g. John" id="fname" required>
                   </div>    
                 </div>
                 <div class="col-md-6">
                   <div class="form-group first">
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname" class="form-control" placeholder="e.g. Smith" id="lname">
+                    <input type="text" name="lname" class="form-control" placeholder="e.g. Smith" id="lname" required>
                   </div>    
                 </div>
               </div>
@@ -81,7 +81,7 @@
                 <div class="col-md-12">
                   <div class="form-group first">
                     <label for="email">Email Address</label>
-                    <input type="email" name="email" class="form-control" placeholder="e.g. john@your-domain.com" id="email">
+                    <input type="email" name="email" class="form-control" placeholder="e.g. john@your-domain.com" id="email" required>
                   </div>    
                 </div>
               </div>
@@ -89,7 +89,7 @@
                 <div class="col-md-6">
                   <div class="form-group first">
                     <label for="phoneno">Phone Number</label>
-                    <input type="text" name="phone" class="form-control" placeholder="+00 0000 000 0000" id="phoneno">
+                    <input type="text" name="phone" class="form-control" placeholder="+00 0000 000 0000" id="phoneno" required>
                   </div>    
                 </div>
               </div>
@@ -99,14 +99,14 @@
                 
                     <div class="form-group last mb-3">
                       <label for="password">Password</label>
-                      <input type="password" name="password" class="form-control" placeholder="Your Password" id="password">
+                      <input type="password" name="password" class="form-control" placeholder="Your Password" id="password" required>
                     </div>
                   </div>
                 <div class="col-md-6">
               
                   <div class="form-group last mb-3">
                     <label for="re-password">Re-type Password</label>
-                    <input type="password" class="form-control" placeholder="Your Password" id="re-password">
+                    <input type="password" class="form-control" placeholder="Your Password" id="re-password" required>
                   </div>
                 </div>
               </div>

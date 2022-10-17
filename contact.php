@@ -63,27 +63,27 @@ if($result->status=='success')
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
-                            <li><a href="index.php" class="active">Home</a></li>
+                            <li><a href="index.php">Home</a></li>
                                      
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                               
                                 <div class="dropdown-menu">
-                                <a class="dropdown-item" href="adminlogin.php">Groceries</a>
+                                <a class="dropdown-item" href="grocery.php">Groceries</a>
                                 
                                     
-                                    <a class="dropdown-item" href="loginform.php">Fruits and Vegetables</a>
-                                    <a class="dropdown-item" href="">Dairy Products</a>
+                                    <a class="dropdown-item" href="vegetables.php">Fruits and Vegetables</a>
+                                    <a class="dropdown-item" href="dairy.php">Dairy Products</a>
                                     
                                 </div>
-                            <li><a href="">Checkout</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
                             
                             
                             
                     
-                            <li><a href="">About Us</a></li>
+                            <li><a href="aboutus.php">About Us</a></li>
                         
-                            <li><a href="">Contact</a></li> 
+                            <li><a href="contact.php" class="active">Contact</a></li> 
                             <?php
                               if(isset($_SESSION["clog"]))
                               {
@@ -147,7 +147,7 @@ if($result->status=='success')
     
     <!-- ***** Header Area End ***** -->
 
-    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/Contact.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
@@ -251,20 +251,45 @@ if($result->status=='success')
     </section>
     <!-- ***** Contact Us Area Ends ***** -->
     
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        Copyright © 2022 Gro-Fresh
-                         
-                    </p>
+    <!-- Footer Start -->
+   <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">GRO<span class="text-secondary">-</span>FRESH</h1>
+                    <p>Vendors Near You!!</p>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                   
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a><br>
+                    <a class="btn btn-link" href="">Contact Us</a><br>
+                    <a class="btn btn-link" href="">Our Services</a><br>
+                    <a class="btn btn-link" href="">Terms & Condition</a><br>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                
                 </div>
             </div>
         </div>
-    </footer>
-
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Gro-Fresh@2022</a>, All Right Reserved.
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
