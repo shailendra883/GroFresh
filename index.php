@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $ch=curl_init();
 curl_setopt($ch,CURLOPT_URL, 'http://ip-api.com/json');
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
@@ -71,8 +72,6 @@ if($result->status=='success')
                                     <a class="dropdown-item" href="dairy.php">Dairy Products</a>
                                     
                                 </div>
-                            
-                            
                             
                     
                             <li><a href="aboutus.php">About Us</a></li>
